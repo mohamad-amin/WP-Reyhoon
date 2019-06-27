@@ -15,20 +15,20 @@ const RestaurantSchema = new mongoose.Schema({
     },
 
     // array of food categories. e.g. fastfood or irani
-    categories: {
+    categories: [{
         ref: 'Category',
-        type: mongoose.Schema.Types.ObjectId,
-    },
+        type: mongoose.Schema.Types.ObjectId
+    }],
 
-    foods: {
+    foods: [{
         ref: 'Food',
         type: mongoose.Schema.Types.ObjectId
-    },
+    }],
 
-    comments: {
+    comments: [{
         ref: 'Comment',
         type: mongoose.Schema.Types.ObjectId
-    }
+    }]
 
 });
 
