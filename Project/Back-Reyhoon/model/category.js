@@ -1,7 +1,6 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
 const CategorySchema = new mongoose.Schema({
-    id: String, // or an auto increment number,
     name: String
 });
 
