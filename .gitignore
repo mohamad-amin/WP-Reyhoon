@@ -1,3 +1,7 @@
+# Mac
+/.DS_STORE
+*/.DS_STORE
+
 # Jetbrains
 /.idea
 */.idea
