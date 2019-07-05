@@ -2,8 +2,6 @@ import React, {Component} from 'react'
 import { Paper, Typography, Grid, Divider } from '@material-ui/core';
 import $ from 'jquery';
 
-import '../../assets/styles/restaurant_header.css'
-
 import img_logo from '../../assets/images/logo.svg'
 
 const img_size = 80
