@@ -91,8 +91,6 @@ class Restaurants extends Component {
         this.onSearchRestaurantChange = this.onSearchRestaurantChange.bind(this);
         this.onCategoriesSelectChange = this.onCategoriesSelectChange.bind(this);
 
-        console.log('Const called!')
-
     }
 
     componentWillMount() {
@@ -144,10 +142,6 @@ class Restaurants extends Component {
     }
 
     render() {
-
-        if (!this.state.restaurants.name) {
-            return <br/>
-        }
 
         let checkedCategories = []; // sorted array of { id , name , count }
         let unCheckedCategories = []; // sorted array of { id , name , count }
