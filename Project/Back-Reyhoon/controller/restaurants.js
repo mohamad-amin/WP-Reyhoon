@@ -7,6 +7,7 @@ function handleErrorData(error, data, res) {
     if (error) {
         res.status(400).send(error);
     } else {
+        console.log(data);
         res.send(data);
     }
 }
@@ -16,9 +17,10 @@ exports.getRestaurants = function (city, area, categories, res) {
         'address.city': city,
         'address.area': area
     };
-    if (categories.length !== 0) {
+    if (categories && categories.length !== 0) {
         query['categories.name'] = {$in: categories}
     }
+    console.log('Query is: ' + query);
     Restaurant.find(query).exec((error, data) => handleErrorData(error, data, res));
 };
 
@@ -70,7 +72,7 @@ exports.createRestaurant = function (requestBody, res) {
 };
 
 exports.getRestaurantComments = function (id, res) {
-    Restaurant.find({'id': id})
+    Restaurant.find({'_id': id})
         .sort('-created_at')
         .select('comments')
         .exec((error, data) => handleErrorData(error, data, res))

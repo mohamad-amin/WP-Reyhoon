@@ -1,4 +1,8 @@
 const mongoose = require('mongoose');
+const Address = require('./address')
+const Category = require('./category')
+const Food = require('./food')
+const Comment = require('./comment')
 
 const RestaurantSchema = new mongoose.Schema({
     name: String,

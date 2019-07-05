@@ -1,5 +1,5 @@
-const Comment = require('../models/comments');
-const Restaurant = require('../models/restaurant');
+const Comment = require('../model/comment');
+const Restaurant = require('../model/restaurant');
 
 function handleErrorData(error, data, res) {
     if (error) {

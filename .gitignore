@@ -5,6 +5,7 @@
 # Jetbrains
 /.idea
 */.idea
+*/*/.idea
 
 # Logs
 logs

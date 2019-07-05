@@ -1,0 +1,48 @@
+.header {
+    position: relative;
+    background-color: #fff;
+    border-width: 0 0 .3rem;
+    border-style: solid;
+    margin: 0 auto;
+    -webkit-border-image: -webkit-gradient(linear,right top,left top,from(#8b00af),color-stop(#d40062),to(#ff0613)) 1;
+    -webkit-border-image: -webkit-linear-gradient(right,#8b00af,#d40062,#ff0613) 1;
+    -o-border-image: -o-linear-gradient(right,#8b00af,#d40062,#ff0613) 1;
+    border-image: -webkit-gradient(linear,right top,left top,from(#8b00af),color-stop(#d40062),to(#ff0613)) 1;
+    border-image: linear-gradient(270deg,#8b00af,#d40062,#ff0613) 1;
+    box-shadow: 0 .4rem .8rem rgba(0,0,0,.21);
+    -webkit-box-shadow: 0 .4rem .8rem rgba(0,0,0,.21);
+}
+.header-layout {
+    display: flex;
+    padding: .7rem 5%;
+}
+/* the icon in the header*/
+.header-icon-layout {
+    flex-grow: 9;
+    direction: ltr;
+}
+.header-icon {
+    height: 2.2rem;
+}
+.header-layout > div > * {
+    line-height: 2.2rem;
+    vertical-align: middle;
+}
+/* header's account div */
+.account-layout {
+    flex-grow: 1;
+}
+.account-layout > div {
+    margin: 0 10px;
+    display: inline-block;
+}
+.account-splitter {
+    width: 2px;
+    background-color: #678b8b8b;
+    display: inline-block;
+    height: 1.4em;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    position: absolute;
+    margin-right: -4px;
+}

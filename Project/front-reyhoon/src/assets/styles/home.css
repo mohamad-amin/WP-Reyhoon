@@ -1,0 +1,557 @@
+
+/* order layout */
+.order-layout {
+    min-height: 30rem;
+    text-align: center;
+    background: url('../images/order-bg.jpg') no-repeat -25% 0;
+    background-size: 45rem;
+    background-color: #fff;
+    color: #9a9a9a;
+}
+.order-banner h1 {
+    color: black;
+    font-size: 2vw;
+    margin-bottom: 0.2rem;
+    margin-top: 3rem;
+}
+.order-banner p {
+    font-size: 0.9vw;
+    padding-bottom: 0.5rem;
+    margin-top: 10px;
+}
+
+/* search layout */
+.search-layout {
+    display: inline-block;
+}
+.search-bar-layout {
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 2px 5px 9px #aaa;
+}
+.search-bar-layout > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* city input's style in search bar */
+.search-bar-city {
+    box-sizing: border-box;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.search-bar-city img {
+    margin-top: 3px;
+    vertical-align: middle;
+    width: 0.6rem;
+    margin-right: .3rem;
+    opacity: 0.6;
+    transform: rotate(270deg);
+}
+.search-bar-city input {
+    border: none;
+    padding-left: 1rem;
+    margin-right: 10px;
+    width: 3rem;
+    font-size: 0.85rem;
+}
+
+/* district input's style in search bar */
+.search-bar-district {
+    margin-top: -0.32rem;
+    box-sizing: border-box;
+    padding: 0.7em;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #ddd;
+}
+.search-bar-district legend {
+    padding-right: 0.5rem;
+    padding-left: 1.5rem;
+    font-size: 0.7em;
+    color: black;
+    text-align: right;
+}
+.search-bar-district img {
+    transform: scale(1.1);
+    margin-top: -5px;
+    vertical-align: middle;
+    margin-right: .3rem;
+    opacity: 0.4;
+}
+.search-bar-district input {
+    border: none;
+    margin-top: -5px;
+    padding-left: 1rem;
+    margin-right: 10px;
+    width: 28rem;
+    font-size: 0.85rem;
+}
+
+/* search button's style in search bar */
+.search-bar-button {
+    margin-right: -2px;
+    margin-top: 1px;
+    width: 50px;
+    height: 47px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-image: -webkit-linear-gradient(45deg, #d40062 30%, #8e00ab 90%);
+    background-image: -moz-linear-gradient(45deg, #d40062 30%, #8e00ab 90%);
+    background-image: -o-linear-gradient(45deg, #d40062 30%, #8e00ab 90%);
+    background-image: linear-gradient(45deg, #d40062 30%, #8e00ab 90%);
+}
+.search-bar-button i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* previous search's style */
+.previous-search {
+    text-align: right;
+    margin-top: -5px;
+}
+.previous-search p {
+    text-decoration: underline;
+    font-size: 0.8rem
+}
+
+/* steps layout */
+.steps-layout {
+    display: flex;
+    color: #aaa;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+.steps-layout > div {
+    flex-grow: 1;
+    text-align: center;
+    width: 25%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.steps-layout > div > p {
+    text-align: right;
+    font-size: 15px;
+    margin: 7% 0;
+    height: 8%;
+}
+/* each step box*/
+.steps-box {
+    display: inline-flex;
+    height: 70%;
+    padding: 7.5% .5rem;
+    background-color: white;
+    box-shadow: 2px 5px 9px #aaa;
+}
+.steps-box p {
+    font-size: 13px;
+    line-height: 20pt;
+    margin: auto;
+}
+.steps-box div {
+    margin: auto 5px;
+}
+/* step's icon */
+.steps-icon-pic {
+    width: 4rem;
+}
+.steps-icon-sign {
+    padding: .2rem;
+    margin-top: 2.5rem;
+    position: absolute;
+    width: 2rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-image: -webkit-linear-gradient(45deg, #d40062 30%, #8e00ab 90%);
+    background-image: -moz-linear-gradient(45deg, #d40062 30%, #8e00ab 90%);
+    background-image: -o-linear-gradient(45deg, #d40062 30%, #8e00ab 90%);
+    background-image: linear-gradient(45deg, #d40062 30%, #8e00ab 90%);
+}
+
+/* best restaurant */
+.best-restaurants-layout {
+    width: 80%;
+    margin: 10rem auto auto;
+    text-align: center;
+}
+.best-restaurants-h2 {
+    margin: auto;
+    color: black;
+}
+
+.best-restaurants-item {
+    background: white;
+    height: 100%;
+    padding: 2rem 1rem 0 1rem;
+    box-shadow: 0 0 5px #ccc;
+    transition: 0.25s;
+}
+.best-restaurants-item:hover {
+    box-shadow: 0 0 2rem #acacac;
+}
+.best-restaurants-item img {
+    box-shadow: 0 0.25rem 1rem #ccc;
+}
+.best-restaurants-item-name {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+.star-mark {
+    color: #ffc430;
+}
+.star-empty {
+    color: #cecece;
+}
+.star-half {
+    background: -webkit-linear-gradient(left, #ffc430 0%, #ffc430 50%, #cecece 50%, #cecece 100%);
+    background: linear-gradient(to right, #ffc430 0%, #ffc430 50%, #cecece 50%, #cecece 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.rating {
+    display: flex;
+    justify-content: center;
+}
+.rating:before {
+    content: "";
+    width: 2rem;
+    height: 1px;
+    background: #ddd;
+    margin: auto auto auto 10px;
+}
+.rating-comments {
+    color: #888;
+    font-size: 1em;
+    padding: 0 7px 0 0;
+    vertical-align: middle;
+}
+.rating-stars {
+    direction: ltr;
+}
+.rating-result {
+    color: #ffc430;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 0 0 0 7px;
+    vertical-align: middle;
+}
+.rating:after {
+    content: "";
+    width: 2rem;
+    height: 1px;
+    background: #ddd;
+    margin: auto 10px auto auto;
+}
+.restaurant-types {
+    color: #666;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 0;
+    font-size: 13px;
+}
+.restaurant-types li {
+    display: inline-block;
+}
+.restaurant-types > li:not(:last-child):after {
+    content: "";
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 1rem;
+    margin: 0.6rem .4rem auto .4rem;
+    background-color: #777;
+}
+.restaurant-address {
+    color: #777;
+    position: relative;
+    width: 100%;
+}
+.restaurant-address:after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: -webkit-gradient(linear,left top,right top,color-stop(30%,#fff),to(hsla(0,0%,100%,0)));
+    background: -webkit-linear-gradient(left,#fff 30%,hsla(0,0%,100%,0));
+    background: -o-linear-gradient(left,#fff 30%,hsla(0,0%,100%,0) 100%);
+    background: linear-gradient(90deg,#fff 30%,hsla(0,0%,100%,0));
+}
+.best-restaurants-item > img {
+    width: 85px;
+}
+.best-restaurants-item > button {
+    font-size: 0.85rem;
+    padding: 0.5rem 1.4rem;
+    margin-top: 1rem;
+    color: rgb(212, 0, 98);
+    border: 1px solid rgb(212, 0, 98);
+    border-radius: 26px;
+}
+.best-restaurants-item > button:hover {
+    background-color: rgba(212,0,98,.05);
+}
+.best-restaurants {
+    display: flex;
+    color: #aaa;
+    margin:auto;
+    padding-top: 5px;
+}
+.best-restaurants > a {
+    width: 20%;
+    flex-grow: 1;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+}
+.best-restaurants > a > div {
+    text-align: center;
+    border-radius: 5px;
+}
+
+.good-restaurants-layout {
+    margin: 100px 0;
+    background: url('../images/good-rest-background.jpg') no-repeat 15% 0;
+    background-size: cover;
+}
+.good-restaurants-layout > p {
+    margin-right: 3rem;
+    padding-top: 3rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.good-restaurants {
+    width: 50%;
+    margin-right: 10%;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
+.good-restaurants > div {
+    flex-grow: 1;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+.good-restaurants > div > a {
+    margin: auto;
+}
+.good-restaurants > div > a > div > p {
+    color: #777;
+    margin-top: -2px;
+    font-weight: bold;
+    font-size: 0.88em;
+    min-width: 125px;
+}
+.good-restaurants > div > a > div > img {
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    box-shadow: 0 0 8px #ccc;
+}
+
+.select-type-layout {
+    text-align: center;
+}
+.select-type-layout > h1 {
+    color: black;
+}
+.select-type-layout > p {
+    color: #bbb;
+    font-size: 1.3em;
+}
+.type-list {
+    width: 80vw;
+    display: inline-flex;
+    height: 20rem;
+}
+.type-list > a {
+    flex-grow: 1;
+    display: flex;
+    margin: 0 12px 0 0;
+    background-size: cover;
+}
+.type-list > a > div {
+    width: 17.5vw;
+    text-align: right;
+    border-radius: 5px;
+}
+.type-list > a > div > p {
+    color: white;
+    font-size: 1.2em;
+    margin-top: 0.4rem;
+}
+.type-list > a > div > h3 {
+    color: white;
+    margin: 0;
+    padding-top: 85%;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+.type-list > a:hover h3 {
+    padding-top: 80%;
+}
+.sandwich {
+    background: url('../images/food-type-backs/back1.jpeg') no-repeat 0 0;
+}
+.burger {
+    background: url('../images/food-type-backs/back2.jpeg') no-repeat 0 0;
+}
+.pizza {
+    background: url('../images/food-type-backs/back3.jpeg') no-repeat 0 0;
+}
+.kebab {
+    background: url('../images/food-type-backs/back4.jpeg') no-repeat 0 0;
+}
+.type-list > a > div {
+    height: 100%;
+    border-radius: 5px;
+    padding-right: 1.5rem;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.8));
+}
+.select-type-minimal {
+    width: 75%;
+    text-align: center;
+    margin: 50px auto;
+}
+.select-type-minimal > h1 {
+    color: black;
+}
+.select-type-minimal > div > a {
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    transition: 0.2s;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 0 3px #eee;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+.select-type-minimal > div > a:hover {
+    box-shadow: 0 0 10px #ccc;
+}
+
+.app-div {
+    width: 70vw;
+    margin: 170px auto auto;
+}
+.app-div-outer {
+    width: 100%;
+    height: 520px;
+    background-color: white;
+    box-shadow: 0 0 2px #eee;
+    -webkit-box-shadow: 0 0 2px #eee;
+    display: flex;
+}
+.app-div-right-side {
+    flex-grow: 3;
+}
+.app-div-left-side {
+    display: inline-flex;
+    flex-grow: 1;
+}
+.app-div-left-side img {
+    margin-top: -150px;
+    margin-left: -260px;
+    height: 793px;
+}
+.app-div-right-side h1 {
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.app-div-right-side p {
+    margin-right: 30px;
+    font-size: 1.5em;
+}
+.rec-link-div {
+    display: inline-flex;
+    border: 1px solid #a0a0a08a;
+    border-radius: 70px;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    margin-right: 30px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px #ddd;
+    -webkit-box-shadow: 0 0 15px #ddd;
+}
+.rec-link-div:focus-within {
+    border: 1px solid #8e00ab;
+}
+.recv-link-btn {
+    background-image: -webkit-linear-gradient(45deg, #d40062 30%, #8e00ab 90%);
+    background-image: -moz-linear-gradient(45deg, #d40062 30%, #8e00ab 90%);
+    background-image: -o-linear-gradient(45deg, #d40062 30%, #8e00ab 90%);
+    background-image: linear-gradient(45deg, #d40062 30%, #8e00ab 90%);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    border-right: 0;
+    border-left: 0;
+    margin-left: -11px;
+    color: white;
+    text-align: center;
+    padding-top: 1.2rem;
+    height: 3.6rem;
+    margin-top: 0px;
+    width: 15rem;
+    border-radius: 70px 0 0 70px;
+}
+.region-getter-typable {
+    padding: 0.3rem;
+}
+.region-getter-typable input {
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    width: 30rem;
+    background: none;
+}
+.rec-link-div .region-getter-typable {
+    width: 20rem;
+}
+.rec-link-div .region-getter-typable input {
+    height: 2.5rem;
+    padding-right: 30px;
+    padding-top: 0.35rem;
+}
+.app-div-access-msg {
+    padding-top: 10px;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+.app-download-links {
+    margin-right: 30px;
+}
+.app-download-links div {
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+    font-size: 1.1rem;
+    padding: 0px 0px;
+}
+.app-download-links div:hover {
+    box-shadow: 0 0 8px #ddd;
+    -webkit-box-shadow: 0 0 8px #ddd;
+}

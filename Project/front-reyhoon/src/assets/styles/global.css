@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('../fonts/Shabnam.eot');
+    src: url('../fonts/Shabnam.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Shabnam.woff') format('woff'),
+    url('../fonts/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Shabnam;
+    src: url('../fonts/Shabnam-Bold.eot');
+    src: url('../fonts/Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Shabnam-Bold.woff') format('woff'),
+    url('../fonts/Shabnam-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: Shabnam;
+    src: url('../fonts/Shabnam-Light.eot');
+    src: url('../fonts/Shabnam-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Shabnam-Light.woff') format('woff'),
+    url('../fonts/Shabnam-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+body, input, textarea, select, button {
+    font-family: Shabnam,Arial;
+    outline: none;
+}
+body {
+    font-size: 0.85rem;
+    color: #4a4a4a;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+body > div {
+    width: 100%;
+}
+
+a {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+a:hover {
+    color: red
+}
+
+.reyhoon-logo {
+    width: 135px;
+    display: block;
+    margin: auto;
+    padding-top: 3rem;
+}
+.pointer-cursor {
+    cursor: pointer;
+}

@@ -9,6 +9,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var restaurantsRouter = require('./routes/restaurents');
 
+var cors = require('cors');
+
 var app = express();
 
 // view engine setup
@@ -22,11 +24,17 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // MongoDB setup
-mongoose.connect("mongodb://localhost/reyhoon", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost/playground", { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "Database Error!"));
 db.once("open", function() {
   console.log("Database is alive!");
+});
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
 });
 
 app.use('/', indexRouter);
@@ -36,13 +44,20 @@ app.use('/api/restaurants', restaurantsRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
+  // res.setHeader("Access-Control-Allow-Origin", '*');
+  // res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 });
+
+app.use(cors());
 
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
+  
+  // res.setHeader("Access-Control-Allow-Origin", '*');
+  // res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
   // render the error page
   res.status(err.status || 500);
