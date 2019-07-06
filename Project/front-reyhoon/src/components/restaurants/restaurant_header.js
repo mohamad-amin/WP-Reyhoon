@@ -74,13 +74,19 @@ class RestaurantHeader extends Component {
                         </Grid>
                         <Grid item container id="options" style={{padding: '8px 5% 16px 5%', width: '100%'}}>
                             <Grid item xs={4}>
-                                <Typography variant="body2" style={{color: 'grey'}}>منوی رستوران</Typography>
+                                <a href="#section1">
+                                    <Typography variant="body2" style={{color: 'grey'}}>منوی رستوران</Typography>
+                                </a>
                             </Grid>
                             <Grid item xs={4}>
-                                <Typography variant="body2" style={{color: 'grey'}}>اطلاعات رستوران</Typography>
+                                <a href="#section2">
+                                    <Typography variant="body2" style={{color: 'grey'}}>اطلاعات رستوران</Typography>
+                                </a>
                             </Grid>
                             <Grid item xs={4}>
-                                <Typography variant="body2" style={{color: 'grey'}}>نظرات کاربران</Typography>
+                                <a href="#section3">
+                                    <Typography variant="body2" style={{color: 'grey'}}>نظرات کاربران</Typography>
+                                </a>
                             </Grid>
                         </Grid>
                     </Grid>

@@ -15,6 +15,7 @@ import TimeIcon from '@material-ui/icons/WatchLater'
 import FoodItem from './restaurants/food_item'
 import { lighten } from '@material-ui/core/styles';
 import Comment from './restaurants/comment';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 const width = '800px'
 
@@ -137,19 +138,21 @@ class Restaurant extends Component {
                     <Grid container direction="column" spacing={2} alignItems="center">
                         
                         <Grid item>
-                            <TextField 
-                                placeholder="جستجو در منوی این رستوران" 
-                                rowsMax="1"
-                                style={{width: width, paddingTop: 24}}
-                                onChange={this.onQueryChanged}
-                                InputProps={{
-                                    startAdornment: (
-                                      <InputAdornment position="start">
-                                        <SearchIcon />
-                                      </InputAdornment>
-                                    )
-                                  }}
-                                />
+                            <ScrollableAnchor id={'section1'}>
+                                <TextField 
+                                    placeholder="جستجو در منوی این رستوران" 
+                                    rowsMax="1"
+                                    style={{width: width, paddingTop: 24}}
+                                    onChange={this.onQueryChanged}
+                                    InputProps={{
+                                        startAdornment: (
+                                        <InputAdornment position="start">
+                                            <SearchIcon />
+                                        </InputAdornment>
+                                        )
+                                    }}
+                                    />
+                            </ScrollableAnchor>
                         </Grid>
 
                         <Grid item style={{textAlign: 'start'}}>
@@ -158,7 +161,9 @@ class Restaurant extends Component {
 
                         <Grid item style={{textAlign: 'start', width: width, padding: 0}}>
                             <br/><br/>
-                            <Typography variant="h6" color="textPrimary" style={{fontWeight: 'bold', marginRight: 16}}>اطلاعات رستوران</Typography>
+                            <ScrollableAnchor id={'section2'}>
+                                <Typography variant="h6" color="textPrimary" style={{fontWeight: 'bold', marginRight: 16}}>اطلاعات رستوران</Typography>
+                            </ScrollableAnchor>
                             <Divider />
                             <Typography variant="body1" color="textPrimary" style={{fontWeight: 'bold', margin: '16px 0'}}>{name}</Typography>
                             <Grid container alignItems="center" spacing={1}>
@@ -192,7 +197,9 @@ class Restaurant extends Component {
 
                         <Grid item style={{textAlign: 'start', width: width, padding: 0}}>
                             
-                            <Typography variant="h6" color="textPrimary" style={{fontWeight: 'bold', marginRight: 16}}>نظرات کاربران در مورد رستوران</Typography>
+                            <ScrollableAnchor id={'section3'}>
+                                <Typography variant="h6" color="textPrimary" style={{fontWeight: 'bold', marginRight: 16}}>نظرات کاربران در مورد رستوران</Typography>
+                            </ScrollableAnchor>
                             <Divider style={{marginBottom: 16}}/>
                             <Typography variant="caption" color="textSecondary">
                             شما هم می‌توانید بعد از سفارش از این رستوران، نظر خود را درباره‌ی این رستوران ثبت کنید.

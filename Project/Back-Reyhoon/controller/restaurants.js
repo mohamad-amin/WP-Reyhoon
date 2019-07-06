@@ -20,7 +20,6 @@ exports.getRestaurants = function (city, area, categories, res) {
     if (categories && categories.length !== 0) {
         query['categories.name'] = {$in: categories}
     }
-    console.log('Query is: ' + query);
     Restaurant.find(query).exec((error, data) => handleErrorData(error, data, res));
 };
 

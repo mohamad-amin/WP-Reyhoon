@@ -175,7 +175,7 @@ let past3 = new Food({
 
  let rest0 = new Restaurant({
      name: 'رستوران ۰',
-     logo: '',
+     logl: 'http://localhost:3001/static/logo.svg',
      openingTime: 0,
      closingTime: 24,
      averageRate: 4.3,
@@ -187,7 +187,7 @@ let past3 = new Food({
 
  let rest11 = new Restaurant({
     name: 'رستوران ۱۱',
-    logo: '',
+    logl: 'http://localhost:3001/static/logo.svg',
     openingTime: 0,
     closingTime: 24,
     averageRate: 4.3,
@@ -199,7 +199,7 @@ let past3 = new Food({
 
 let rest12 = new Restaurant({
     name: 'رستوران ۱۲',
-    logo: '',
+    logl: 'http://localhost:3001/static/logo.svg',
     openingTime: 0,
     closingTime: 24,
     averageRate: 3.4,
@@ -211,7 +211,7 @@ let rest12 = new Restaurant({
 
 let rest13 = new Restaurant({
     name: 'رستوران ۱۳',
-    logo: '',
+    logl: 'http://localhost:3001/static/logo.svg',
     openingTime: 12,
     closingTime: 18,
     averageRate: 2.3,
@@ -223,7 +223,7 @@ let rest13 = new Restaurant({
 
 let rest14 = new Restaurant({
     name: 'رستوران ۱۴',
-    logo: '',
+    logl: 'http://localhost:3001/static/logo.svg',
     openingTime: 9,
     closingTime: 21,
     averageRate: 4.7,
@@ -235,7 +235,7 @@ let rest14 = new Restaurant({
 
 let rest21 = new Restaurant({
     name: 'رستوران ۲۱',
-    logo: '',
+    logl: 'http://localhost:3001/static/logo.svg',
     openingTime: 0,
     closingTime: 24,
     averageRate: 4.6,
@@ -247,7 +247,7 @@ let rest21 = new Restaurant({
  
 let rest22 = new Restaurant({
     name: 'رستوران ۲۲',
-    logo: '',
+    logo: 'http://localhost:3001/static/logo.svg',
     openingTime: 0,
     closingTime: 24,
     averageRate: 4.6,
